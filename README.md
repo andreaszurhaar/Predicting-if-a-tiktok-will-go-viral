@@ -1,2 +1,4 @@
 # Predicting-if-a-tiktok-will-go-viral
-This notebook demonstrates how to build a natural language processing (NLP) random forest model to predict whether a TikTok video will go viral. Unlike traditional models, this approach mimics a democratic process. 
+This notebook demonstrates how to build a natural language processing (NLP) random forest model to predict whether a TikTok video will go viral. Unlike traditional models, this approach mimics a democratic process. Multiple models are used, each making its own prediction—either "yes" (the video will go viral, represented by 1) or "no" (the video will not go viral, represented by 0). These individual predictions are then averaged and rounded to arrive at a final decision of either yes or no.
+
+This method offers two key advantages. First, because each sub-model is trained on a different portion of the dataset, it allows for training on very large datasets, even on a laptop. Second, the likelihood of overfitting is reduced since the model operates as an ensemble, combining multiple predictions rather than relying on a single model.
